@@ -8,5 +8,5 @@ before_script:
 script:
 - npm run lint
 after_success:
-- wt init --container "app63474144" --url "WEBTASK_TOKEN" -p "app63474144-eu"
+- wt init --container "app63474144" --url "https://sandbox-eu.it.auth0.com" --token "WEBTASK_TOKEN" -p "app63474144-eu"
 - "npm run deploy"
